@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos de 5!</title>
+</head>
+<body>
+    
+    <?php 
+        echo "Ping Pong Ploc:<br>";
+
+        for($i = 1; $i <= 100; $i++){
+            if($i % 3 == 0 && $i % 5 == 0){
+                echo "$i. <u>ploc</u><br>";
+            }
+            elseif($i % 3 == 0){
+                echo "$i. <strong>ping</strong><br>";
+            }
+            elseif($i % 5 == 0){
+                echo "$i. <i>pong</i><br>";
+            }
+            else{
+                echo "$i. ok<br>";
+            }
+        }
+    ?>
+
+</body>
+</html>
